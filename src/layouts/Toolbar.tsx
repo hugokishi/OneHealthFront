@@ -1,16 +1,15 @@
-import { AppBar, Toolbar } from '@material-ui/core';
-import { makeStyles } from '@material-ui/styles';
+import { AppBar, Toolbar, makeStyles } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
-import { Theme } from '../theme';
+import { WithTheme, Theme } from 'theme';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.primary.light})`
+    background: `linear-gradient(45deg, ${theme.palette.secondary.main}, ${theme.palette.secondary.light})`
   },
   logo: {
-    height: '38px',
+    height: '48px',
     padding: '10px',
-  }
+  },
 }));
 
 const Toobar = () => {
@@ -32,4 +31,4 @@ const Toobar = () => {
   );
 };
 
-export default Toobar;
+export default WithTheme(Toobar);

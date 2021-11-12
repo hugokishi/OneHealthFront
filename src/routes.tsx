@@ -7,7 +7,7 @@ const Routes = () => {
       <Switch>
         <Route
           exact
-          path="/sign-in"
+          path="/"
           component={SignIn}
         />
       </Switch>

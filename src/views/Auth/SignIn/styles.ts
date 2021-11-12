@@ -1,53 +1,45 @@
-import { makeStyles } from "@material-ui/styles";
-import { Theme } from "../../../theme";
+import { makeStyles } from "@material-ui/core";
+import { Theme } from "theme";
 
 export default makeStyles((theme: Theme) => ({
+  headerText: {
+    color: theme.palette.secondary.dark,
+  },
   input: {
-    borderRadius: 4,
-    borderWidth: "1px",
-    borderStyle: "solid",
-    borderColor: theme.palette.grey[300],
-    fontSize: 16,
-    padding: "8px 12px",
-    color: theme.palette.grey[800],
-    backgroundColor: "#FFFFFF",
-    lineHeight: "24px",
+    marginTop: theme.spacing(3),
+  },
+  forgotPassword: {
+    marginTop: theme.spacing(1.5),
+  },
+  orText: {
+    alignSelf: "center",
+    color: theme.palette.grey[500],
+  },
+  footer: {
+    marginTop: theme.spacing(4),
+    maxWidth: theme.spacing(54),
+    width: "100%",
   },
   button: {
-    height: "52px",
-    boxShadow: "none",
-    textTransform: "none",
+    marginTop: theme.spacing(4),
+  },
+  divider: {
+    marginTop: theme.spacing(8),
+  },
+  dontHaveAccount: {
+    color: theme.palette.secondary.dark,
+    fontWeight: theme.typography.fontWeightBold,
+    paddingBottom: theme.spacing(1),
+  },
+  link: {
+    fontWeight: theme.typography.fontWeightBold,
+    paddingLeft: theme.spacing(0.4),
+  },
+  root: {
+    display: "flex",
+    flexDirection: "column",
+    height: "100%",
+    maxWidth: theme.typography.pxToRem(438),
     width: "100%",
-    borderWidth: "1px",
-    borderStyle: "solid",
-    color: theme.palette.common.white,
-    fontWeight: 500,
-    fontSize: "1rem",
-    padding: "8px 16px",
-    borderRadius: "4px",
-    lineHeight: 1.5,
-    "&$disabled": {
-      borderColor: theme.palette.grey[500],
-      backgroundColor: theme.palette.grey[200],
-    },
-    contained: {
-      "&:hover": {
-        boxShadow: "unset",
-      },
-      "&$disabled": {
-        borderColor: theme.palette.grey[500],
-        backgroundColor: theme.palette.grey[200],
-      },
-    },
   },
-  formInput: {
-    paddingTop: theme.spacing(2),
-    display: "flex"
-  },
-  formInputLast: {
-    paddingTop: theme.spacing(2),
-    paddingBottom: theme.spacing(2),
-    display: "flex"
-  }
-
 }));

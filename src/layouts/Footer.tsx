@@ -1,6 +1,5 @@
-import { Box, Typography } from "@material-ui/core";
-import { makeStyles } from "@material-ui/styles";
-import { Theme } from "../theme";
+import { Box, Typography, makeStyles } from "@material-ui/core";
+import { Theme, WithTheme } from "../theme";
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
@@ -27,4 +26,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default WithTheme(Footer);
