@@ -1,17 +1,17 @@
-import { Box, Typography, makeStyles } from "@material-ui/core";
-import { Theme, WithTheme } from "../theme";
+import { Box, Typography, makeStyles } from '@material-ui/core';
+import { Theme, WithTheme } from '../theme';
 
 const useStyles = makeStyles((theme: Theme) => ({
   root: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    paddingBottom: theme.spacing(1),
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    paddingBottom: theme.spacing(1)
   },
   footerText: {
     color: theme.palette.grey[300],
-    marginRight: theme.spacing(1),
-  },
+    marginRight: theme.spacing(1)
+  }
 }));
 
 const Footer = () => {

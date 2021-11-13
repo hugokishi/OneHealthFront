@@ -6,6 +6,6 @@ const overrides = {
   MuiCssBaseline,
   MuiButton,
   MuiDivider
-}
+};
 
 export default overrides;

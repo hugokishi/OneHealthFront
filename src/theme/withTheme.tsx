@@ -11,9 +11,7 @@ export const WithTheme = ({ children }: { children: React.ReactNode }) => (
 interface WithThemeV1HocProps {}
 
 const WithThemeV1 =
-  <P extends WithThemeV1HocProps = WithThemeV1HocProps>(
-    Component: React.ComponentType<P>
-  ) =>
+  <P extends WithThemeV1HocProps = WithThemeV1HocProps>(Component: React.ComponentType<P>) =>
   (props: Omit<P, keyof WithThemeV1HocProps>) =>
     (
       <ThemeProvider theme={theme}>

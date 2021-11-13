@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-import { makeStyles } from "@material-ui/core";
-import { InputAdornment, IconButton } from "@material-ui/core";
-import InputBase from "@material-ui/core/InputBase";
-import { Visibility, VisibilityOff } from "@material-ui/icons";
+import { makeStyles } from '@material-ui/core';
+import { InputAdornment, IconButton } from '@material-ui/core';
+import InputBase from '@material-ui/core/InputBase';
+import { Visibility, VisibilityOff } from '@material-ui/icons';
 
 import { Theme } from '../../theme';
 
@@ -14,28 +14,25 @@ interface StyleProps {
 const useStyles = makeStyles<Theme, StyleProps>((theme) => ({
   input: {
     borderRadius: 4,
-    borderWidth: "1px",
-    borderStyle: "solid",
-    borderColor: (props) =>
-      props.error ? theme.palette.error.main : theme.palette.grey[300],
+    borderWidth: '1px',
+    borderStyle: 'solid',
+    borderColor: (props) => (props.error ? theme.palette.error.main : theme.palette.grey[300]),
     fontSize: 16,
-    width: "auto",
-    padding: "8px 12px",
+    width: 'auto',
+    padding: '8px 12px',
     color: theme.palette.grey[800],
-    backgroundColor: "#FFFFFF",
-    lineHeight: "24px",
-    "&:hover": {
-      border: (props) =>
-        props.error ? "" : `1px solid ${theme.palette.primary.dark}`,
-      boxShadow: (props) =>
-        props.error ? "" : `0px 0px 4px ${theme.palette.primary.dark}`,
-    },
+    backgroundColor: '#FFFFFF',
+    lineHeight: '24px',
+    '&:hover': {
+      border: (props) => (props.error ? '' : `1px solid ${theme.palette.primary.dark}`),
+      boxShadow: (props) => (props.error ? '' : `0px 0px 4px ${theme.palette.primary.dark}`)
+    }
   },
   iconPassword: {
-    opacity: "0.5",
-    color: (props) => (props.error ? theme.palette.error.main : ""),
-    marginRight: "-5px",
-  },
+    opacity: '0.5',
+    color: (props) => (props.error ? theme.palette.error.main : ''),
+    marginRight: '-5px'
+  }
 }));
 
 export default function SimpleInput({ ...props }) {
@@ -48,13 +45,13 @@ export default function SimpleInput({ ...props }) {
   };
 
   const type = () => {
-    if (props.type === "password") {
-      return !showPassword ? "password" : "text";
+    if (props.type === 'password') {
+      return !showPassword ? 'password' : 'text';
     }
 
     if (props.type) return props.type;
 
-    return "text";
+    return 'text';
   };
 
   return (
@@ -63,7 +60,7 @@ export default function SimpleInput({ ...props }) {
       className={classes.input}
       type={type()}
       endAdornment={
-        props.type === "password" ? (
+        props.type === 'password' ? (
           <InputAdornment position="end">
             <IconButton
               onClick={handleChangeIcon}

@@ -16,7 +16,7 @@ const palette = {
     contrastText: white,
     dark: '#286A6B',
     main: '#286A6B',
-    light: '#77AAAA',
+    light: '#77AAAA'
   },
 
   grey: {

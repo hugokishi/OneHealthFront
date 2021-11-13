@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     height: 'calc(100vh - 64px)',
     minHeight: '100%',
     paddingTop: theme.spacing(8),
-    justifyContent:'center',
+    justifyContent: 'center'
   },
   main: {
     display: 'flex',
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) => ({
     paddingTop: theme.spacing(8),
     paddingLeft: theme.spacing(2),
     paddingRight: theme.spacing(2)
-  },
+  }
 }));
 
 interface ComponentProps {

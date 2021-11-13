@@ -1,6 +1,6 @@
-import React from "react";
-import Routes from "./routes";
-import { WithTheme } from "theme";
+import React from 'react';
+import Routes from './routes';
+import { WithTheme } from 'theme';
 
 const App = () => {
   return <Routes />;

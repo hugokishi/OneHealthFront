@@ -8,8 +8,8 @@ const useStyles = makeStyles((theme: Theme) => ({
   },
   logo: {
     height: '48px',
-    padding: '10px',
-  },
+    padding: '10px'
+  }
 }));
 
 const Toobar = () => {
@@ -19,8 +19,8 @@ const Toobar = () => {
     <AppBar elevation={0} position="fixed" className={classes.root}>
       <Toolbar>
         <RouterLink to="/sign-in">
-        <img
-            title="One Platform"
+          <img
+            title="One Health"
             alt="Logo"
             className={classes.logo}
             src={`/assets/one-health.png`}

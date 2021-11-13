@@ -5,6 +5,6 @@ const MuiDivider = {
     background: palette.grey[500],
     color: palette.grey[500]
   }
-}
+};
 
 export default MuiDivider;

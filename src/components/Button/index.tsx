@@ -1,11 +1,8 @@
-import {
-  ButtonProps as ButtonPropsMUI,
-  CircularProgress,
-} from "@material-ui/core";
+import { ButtonProps as ButtonPropsMUI, CircularProgress } from '@material-ui/core';
 
-import WithTheme from "../../theme/withTheme";
+import WithTheme from '../../theme/withTheme';
 
-import SimpleButton from "./SimpleButton";
+import SimpleButton from './SimpleButton';
 
 interface ButtonProps extends ButtonPropsMUI {
   text?: string;
@@ -15,18 +12,13 @@ interface ButtonProps extends ButtonPropsMUI {
 export const ButtonSimple = ({
   text,
   onClick = () => {},
-  type = "submit",
+  type = 'submit',
   isLoading = false,
   disabled = false,
   ...props
 }: ButtonProps) => {
   return (
-    <SimpleButton
-      type={type}
-      onClick={onClick}
-      disabled={disabled || isLoading}
-      {...props}
-    >
+    <SimpleButton type={type} onClick={onClick} disabled={disabled || isLoading} {...props}>
       {isLoading ? <CircularProgress color="primary" size={32} /> : text}
     </SimpleButton>
   );
