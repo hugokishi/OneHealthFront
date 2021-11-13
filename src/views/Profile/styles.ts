@@ -4,7 +4,7 @@ import { Theme } from 'theme';
 export default makeStyles((theme: Theme) => ({
   root: {
     width: '100%',
-    maxWidth: '1180px',
+    maxWidth: theme.typography.pxToRem(1180),
     padding: '0 30px',
     margin: '32px auto'
   },
@@ -12,26 +12,26 @@ export default makeStyles((theme: Theme) => ({
     alignItems: 'center'
   },
   logo: {
-    width: '250px',
-    height: '106px'
+    width: theme.typography.pxToRem(250),
+    height: theme.typography.pxToRem(106)
   },
   power: {
-    height: '60px',
-    width: '60px',
-    borderRadius: '4px',
+    height: theme.typography.pxToRem(60),
+    width: theme.typography.pxToRem(60),
+    borderRadius: theme.typography.pxToRem(4),
     border: '1px solid #dcdce6',
     background: 'transparent',
-    marginLeft: '16px',
+    marginLeft: theme.typography.pxToRem(16),
     transition: 'border-color 0.2s'
   },
   text: {
     marginTop: theme.spacing(10)
   },
   welcome: {
-    marginLeft: '24px'
+    marginLeft: theme.typography.pxToRem(24)
   },
   button: {
-    width: '260px',
+    width: theme.typography.pxToRem(260),
     marginLeft: 'auto',
     marginTop: 0
   }
