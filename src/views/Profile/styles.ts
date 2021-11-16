@@ -34,5 +34,19 @@ export default makeStyles((theme: Theme) => ({
     width: theme.typography.pxToRem(260),
     marginLeft: 'auto',
     marginTop: 0
+  },
+  gridItem: {
+    background: '#fff',
+    padding: theme.typography.pxToRem(24),
+    borderRadius: theme.typography.pxToRem(8),
+    position: 'relative',
+    marginTop: theme.spacing(2),
+  },
+  analytics: {
+    marginBottom: theme.spacing(2)
+  },
+  list: {
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(2)
   }
 }));

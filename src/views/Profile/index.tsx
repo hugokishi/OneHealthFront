@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography, Button } from '@material-ui/core';
+import { Box, Typography, Button, Grid } from '@material-ui/core';
 import { useHistory } from 'react-router-dom';
 import useStyles from './styles';
 import { PowerSettingsNew } from '@material-ui/icons';
@@ -16,7 +16,7 @@ const Profile = () => {
           title="One Health"
           alt="Logo"
           className={classes.logo}
-          src={`/assets/devrangers.png`}
+          src={`/assets/health-track.png`}
         />
         <Typography variant="h3" className={classes.welcome}>
           Sejá bem-vindo(a), FIAP
@@ -28,14 +28,31 @@ const Profile = () => {
           className={classes.button}
           onClick={() => history.push('/metrics')}
         />
-        <Button variant="contained" className={classes.power}>
+        <Button
+          variant="contained"
+          className={classes.power}
+          onClick={() => history.push('/')}
+        >
           <PowerSettingsNew />
         </Button>
       </Box>
       <Typography variant="h3" className={classes.text}>
-        {' '}
-        Minhas estatísticas{' '}
+        Minhas estatísticas
       </Typography>
+      <Grid container spacing={0}>
+        <Grid item sm={6} className={classes.gridItem}>
+          <Typography variant="h3" className={classes.analytics}> Estatisticas de Peso</Typography>
+          <Typography> Peso Atual: 72 KG </Typography>
+          <Typography variant="h3" className={classes.list}> Ultimos pesos</Typography>
+        </Grid>
+        <Grid item sm={6} className={classes.gridItem}>
+          <Typography variant="h3" className={classes.analytics}> Estatisticas de Água</Typography>
+          <Typography> Agua ingerida hoje: 2 Litros </Typography>
+          <Typography variant="h3" className={classes.list}> Ultima ingestão de água </Typography>
+        </Grid>
+
+      </Grid>
+
     </Box>
   );
 };

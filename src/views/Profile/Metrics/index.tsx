@@ -14,7 +14,7 @@ const Metrics = () => {
     <Box className={classes.container}>
       <Box className={classes.content}>
         <Box className={classes.header}>
-          <img src="/assets/devrangers.png" alt="One Health" className={classes.image} />
+          <img src="/assets/health-track.png" alt="One Health" className={classes.image} />
           <Typography variant="h1" className={classes.title}>
             Cadastro
           </Typography>
@@ -28,10 +28,10 @@ const Metrics = () => {
         </Box>
         <form className={classes.form}>
           <Box className={classes.input}>
-            <Typography variant="body1">
-              Tipo
+            <Typography variant="h5" className={classes.type}>
+              Type
             </Typography>
-            <SimpleSelect fullWidth >
+            <SimpleSelect fullWidth>
               <MenuItem value="Water">
                 Água
               </MenuItem>

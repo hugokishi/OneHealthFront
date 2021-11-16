@@ -4,7 +4,7 @@ import { Theme } from 'theme';
 export default makeStyles((theme: Theme) => ({
   container: {
     width: '100%',
-    maxWidth: '1120px',
+    maxWidth: theme.typography.pxToRem(1120),
     height: '100vh',
     margin: '0 auto',
 
@@ -14,7 +14,7 @@ export default makeStyles((theme: Theme) => ({
   },
   content: {
     width: '100%',
-    padding: '96px',
+    padding: theme.typography.pxToRem(96),
     background: '#f0f0f5',
     boxShadow: '0 0 100px rgba(0, 0, 0, 0.1)',
     borderRadius: '8px',
@@ -52,5 +52,9 @@ export default makeStyles((theme: Theme) => ({
   form: {
     width: '100%',
     maxWidth: theme.typography.pxToRem(450)
+  },
+  type: {
+    fontWeight: theme.typography.fontWeightBold,
+    color: theme.palette.primary.dark
   },
 }));

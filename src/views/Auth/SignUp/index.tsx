@@ -14,7 +14,7 @@ const SignUp = () => {
     <Box className={classes.root}>
       <Box className={classes.content}>
         <Box className={classes.header}>
-          <img src="/assets/devrangers.png" alt="One Health" className={classes.image} />
+          <img src="/assets/health-track.png" alt="One Health" className={classes.image} />
           <Typography variant="h1" className={classes.title}>
             Cadastro
           </Typography>
