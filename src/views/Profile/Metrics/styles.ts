@@ -10,7 +10,7 @@ export default makeStyles((theme: Theme) => ({
 
     display: 'flex',
     alignItems: 'center',
-    justifyItems: 'center',
+    justifyItems: 'center'
   },
   content: {
     width: '100%',
@@ -19,8 +19,8 @@ export default makeStyles((theme: Theme) => ({
     boxShadow: '0 0 100px rgba(0, 0, 0, 0.1)',
     borderRadius: '8px',
     display: 'flex',
-    justifyContent:' space-between',
-    alignItems: 'center',
+    justifyContent: ' space-between',
+    alignItems: 'center'
   },
   header: {
     width: '100%',
@@ -56,5 +56,5 @@ export default makeStyles((theme: Theme) => ({
   type: {
     fontWeight: theme.typography.fontWeightBold,
     color: theme.palette.primary.dark
-  },
+  }
 }));

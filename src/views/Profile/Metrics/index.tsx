@@ -32,9 +32,7 @@ const Metrics = () => {
               Type
             </Typography>
             <SimpleSelect fullWidth>
-              <MenuItem value="Water">
-                Água
-              </MenuItem>
+              <MenuItem value="Water">Água</MenuItem>
             </SimpleSelect>
           </Box>
           <Box className={classes.input}>
@@ -52,7 +50,7 @@ const Metrics = () => {
         </form>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
 export default Metrics;
