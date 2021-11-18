@@ -79,6 +79,7 @@ const Form = ({ submitMutation, isLoading }: FormProps) => {
               inputRef={register()}
               id="input-password"
               placeholder="******"
+              type="password"
               error={errors['password']?.message ? true : false}
             />
             <FormHelperText error>{errors['password']?.message}</FormHelperText>
@@ -89,6 +90,7 @@ const Form = ({ submitMutation, isLoading }: FormProps) => {
               defaultLabel="Confirme sua senha"
               id="input-confirm-password"
               placeholder="******"
+              type="password"
               inputRef={register()}
               error={
                 errors['confirmPassword']?.message || password !== confirmPassword ? true : false
