@@ -147,7 +147,7 @@ const Profile = () => {
             Estatisticas de Peso
           </Typography>
           <Typography>
-            Ultimo Registro de peso: {lastWeight?.weightAmount} {lastWeight?.amountType}{' '}
+            Ultimo Registro de peso: {lastWeight?.weightAmount || '0'} {lastWeight?.amountType}{' '}
           </Typography>
           <Typography variant="h3" className={classes.list}>
             Ultimos pesos
@@ -168,7 +168,7 @@ const Profile = () => {
           <Typography variant="h3" className={classes.analytics}>
             Estatisticas de Comida
           </Typography>
-          <Typography>Ultimo Registro de comida ingerida: {lastFood?.foodName}</Typography>
+          <Typography>Ultimo Registro de comida ingerida: {lastFood?.foodName || 'Nada'}</Typography>
           <Typography variant="h3" className={classes.list}>
             Ultimas ingestões de comida
           </Typography>
@@ -188,7 +188,7 @@ const Profile = () => {
             Estatisticas de Água
           </Typography>
           <Typography>
-            Ultimo Registro de água ingerida: {lastWater?.waterAmount} {lastWater?.amountType}{' '}
+            Ultimo Registro de água ingerida: {lastWater?.waterAmount || '0'} {lastWater?.amountType}{' '}
           </Typography>
           <Typography variant="h3" className={classes.list}>
             Ultimas ingestões de água
